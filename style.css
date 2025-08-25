@@ -1,0 +1,13 @@
+/*
+Theme Name: EDW Theme
+Theme URI: https://example.com
+Description: EDW child theme for GeneratePress.
+Author: Your Name/Company
+Version: 0.1.0
+Template: generatepress
+Text Domain: edw-theme
+*/
+
+body {
+	background: #000;
+}

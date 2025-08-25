@@ -1,0 +1,13 @@
+{
+	"name": "edw/edw-theme",
+	"description": "EDW child theme for GeneratePress",
+	"type": "wordpress-theme",
+	"license": "proprietary",
+	"version": "0.1.0",
+	"extra": {
+		"installer-name": "edw-theme"
+	},
+	"require-dev": {
+		"php-stubs/wordpress-stubs": "^6.8"
+	}
+}
