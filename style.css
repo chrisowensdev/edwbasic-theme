@@ -5,9 +5,97 @@ Description: EDW child theme for GeneratePress.
 Author: Chris Owens/Elevate DevWorks
 Version: 0.1.0
 Template: generatepress
-Text Domain: edw-theme
+Text Domain: edwbasic-theme
 */
 
+:root {
+	--edw-test: 1;
+}
+
+a,
+.button,
+.gb-button,
+.menu-toggle {
+	color: var(--edw-primary);
+}
+.button,
+.gb-button {
+	background: var(--edw-primary);
+	border-color: var(--edw-primary);
+}
+.button.is-style-accent,
+.gb-button.is-style-accent {
+	background: var(--edw-accent);
+	border-color: var(--edw-accent);
+}
+
+.main-navigation .main-nav > ul > li > a {
+	padding-top: var(--edw-nav-pad);
+	padding-bottom: var(--edw-nav-pad);
+}
+
+.site-logo img {
+	max-height: var(--edw-logo-max-h);
+	height: auto;
+}
+
+.edw-hero,
+.hero, /* add your real hero selector(s) */
+.generatepress-page-hero {
+	/* optional */
+	background-image: var(--edw-hero-bg);
+	background-size: cover;
+	background-position: center;
+}
+
+/* Global content widths (adjust to taste) */
+:root {
+	--edw-content-max: 1100px;
+	--edw-wide-max: 1200px;
+}
+
+/* True edge-to-edge full width without horizontal shift */
+.alignfull {
+	width: 100vw;
+	max-width: 100vw;
+	/* margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw); */
+}
+
+/* “Wide” content centers within a larger max width */
+.alignwide {
+	max-width: var(--edw-wide-max);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Remove theme padding when using the EDW full-width template */
+.page-template-edw-full-width .inside-article,
+.page-template-edw-full-width .site-content,
+.page-template-edw-full-width .content-area,
+.page-template-edw-full-width .grid-container {
+	padding: 0 !important;
+	max-width: none !important;
+}
+
+/* Kill default left/right offsets often added by themes */
+.page-template-edw-full-width .entry-content > * {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Optional: avoid tiny 8px “body gap” on some browsers */
+html,
 body {
-	background: #000;
+	overflow-x: hidden;
+}
+
+/* Hide default GP header/nav ONLY on the landing template */
+.page-template-edw-full-width .site-header,
+.page-template-edw-full-width .main-navigation,
+.page-template-edw-full-width .inside-header {
+	display: none !important;
+	height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }

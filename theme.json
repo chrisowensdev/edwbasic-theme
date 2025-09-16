@@ -1,0 +1,38 @@
+{
+	"version": 2,
+	"settings": {
+		"layout": {
+			"contentSize": "1100px",
+			"wideSize": "1200px"
+		},
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"name": "Primary",
+					"color": "#0f4c81"
+				},
+				{
+					"slug": "accent",
+					"name": "Accent",
+					"color": "#ff7a18"
+				},
+				{
+					"slug": "base",
+					"name": "Base",
+					"color": "#ffffff"
+				},
+				{
+					"slug": "contrast",
+					"name": "Contrast",
+					"color": "#111111"
+				},
+				{
+					"slug": "contrast-3",
+					"name": "Contrast 3",
+					"color": "#d9d9d9"
+				}
+			]
+		}
+	}
+}

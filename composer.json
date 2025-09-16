@@ -1,13 +1,21 @@
 {
-	"name": "edw/edw-theme",
+	"name": "edw/edwbasic-theme",
 	"description": "EDW child theme for GeneratePress",
 	"type": "wordpress-theme",
 	"license": "proprietary",
 	"version": "0.1.0",
 	"extra": {
-		"installer-name": "edw-theme"
+		"installer-name": "edwbasic-theme"
 	},
 	"require-dev": {
 		"php-stubs/wordpress-stubs": "^6.8"
+	},
+	"autoload": {
+		"psr-4": {
+			"Edw\\Theme\\": "src/"
+		}
+	},
+	"config": {
+		"optimize-autoloader": true
 	}
 }

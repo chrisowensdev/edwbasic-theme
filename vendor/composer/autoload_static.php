@@ -6,13 +6,30 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitfdf23eb440d78780e7b0a97f4a0f3be5
 {
+    public static $prefixLengthsPsr4 = array (
+        'E' => 
+        array (
+            'Edw\\Theme\\' => 10,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Edw\\Theme\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Edw\\Theme\\Blocks\\Loader' => __DIR__ . '/../..' . '/src/Blocks/Loader.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfdf23eb440d78780e7b0a97f4a0f3be5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfdf23eb440d78780e7b0a97f4a0f3be5::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInitfdf23eb440d78780e7b0a97f4a0f3be5::$classMap;
 
         }, null, ClassLoader::class);

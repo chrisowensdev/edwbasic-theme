@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Edw\\Theme\\Blocks\\Loader' => $baseDir . '/src/Blocks/Loader.php',
 );

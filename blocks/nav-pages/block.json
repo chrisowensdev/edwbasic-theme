@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "edw/nav-pages",
+	"title": "Pages Nav",
+	"category": "theme",
+	"icon": "menu",
+	"description": "A navigation bar that lists published pages automatically.",
+	"supports": { "anchor": true },
+	"attributes": {
+		"depth": { "type": "number", "default": 1 },
+		"exclude": { "type": "string", "default": "" },
+		"includeHome": { "type": "boolean", "default": true },
+		"homeLabel": { "type": "string", "default": "Home" },
+		"orderBy": { "type": "string", "default": "menu_order" },
+		"showLogo": { "type": "boolean", "default": true },
+		"logoId": { "type": "number", "default": 0 },
+		"logoUrl": { "type": "string", "default": "" },
+		"logoAlt": { "type": "string", "default": "" },
+		"logoWidth": { "type": "number", "default": 120 },
+		"logoLinkHome": { "type": "boolean", "default": true },
+		"brandPosition": { "type": "string", "default": "left" }
+	},
+	"editorScript": "edw-nav-pages-editor",
+	"style": "edw-nav-pages-style",
+	"editorStyle": "edw-nav-pages-editor-style",
+	"render": "file:./render.php"
+}
