@@ -1,9 +1,9 @@
 {
-	"name": "edw/edw-theme",
-	"description": "EDW child theme for GeneratePress",
+	"name": "edw/edwbasic-theme",
+	"description": "EDW basic theme",
 	"type": "wordpress-theme",
 	"license": "proprietary",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"extra": {
 		"installer-name": "edw-theme"
 	},
