@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'edw/edw-theme',
+        'name' => 'edw/edwbasic-theme',
         'pretty_version' => '0.1.0',
         'version' => '0.1.0.0',
         'reference' => null,
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'edw/edw-theme' => array(
+        'edw/edwbasic-theme' => array(
             'pretty_version' => '0.1.0',
             'version' => '0.1.0.0',
             'reference' => null,

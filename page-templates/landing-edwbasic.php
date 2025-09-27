@@ -29,12 +29,15 @@ if (has_post_thumbnail(get_the_ID())) {
     $hero_bg_url = $img[0];
   }
 }
+
+$phone = get_theme_mod('edw_phone', '(555) 123-4567');
+
 if (!$hero_bg_url && !empty($hero_bg)) $hero_bg_url = esc_url($hero_bg);
 $hero_style = $hero_bg_url ? 'style="background-image:linear-gradient(180deg,rgba(2,6,23,.55),rgba(2,6,23,.30)),url(' . esc_url($hero_bg_url) . ');background-size:cover;background-position:center;"' : '';
 ?>
 <main class="edw-landing" style="font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
   <section class="edw-hero" <?php echo $hero_style; ?>>
-    <div class="wrap" style="max-width:1100px;margin:0 auto;padding:6rem 1.25rem;color:#fff;text-align:center">
+    <div class="wrap" style="max-width:1100px;margin:0 auto;padding:6rem 1.25rem;text-align:center">
       <p style="opacity:.9;margin:0 0 .75rem"><?php echo esc_html($phone); ?></p>
       <h1 style="margin:.25rem 0 1rem;font-size:clamp(2rem,4vw,3rem)"><?php echo esc_html($hero_t); ?></h1>
       <p style="margin:0 0 1.5rem;font-size:1.1rem;opacity:.92"><?php echo esc_html($hero_s); ?></p>

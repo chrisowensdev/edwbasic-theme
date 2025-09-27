@@ -5,9 +5,17 @@
 	"license": "proprietary",
 	"version": "1.0.0",
 	"extra": {
-		"installer-name": "edw-theme"
+		"installer-name": "edwbasic-theme"
 	},
 	"require-dev": {
 		"php-stubs/wordpress-stubs": "^6.8"
+	},
+	"autoload": {
+		"psr-4": {
+			"Edw\\Theme\\": "src/"
+		}
+	},
+	"config": {
+		"optimize-autoloader": true
 	}
 }

@@ -1,0 +1,27 @@
+.elevate-hero {
+	background-size: cover;
+	background-position: center;
+	padding: 6rem 1.25rem;
+}
+.elevate-hero__inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.elevate-hero__eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	opacity: 0.8;
+	margin: 0 0 0.5rem;
+}
+.elevate-hero__headline {
+	margin: 0.25rem 0 1rem;
+	line-height: 1.1;
+}
+.elevate-hero__subcopy {
+	margin: 0 auto 1.25rem;
+	max-width: 720px;
+}
+.elevate-hero__cta .wp-block-button__link {
+	padding: 0.75rem 1.25rem;
+}
