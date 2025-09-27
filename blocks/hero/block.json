@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "edw/hero",
+	"title": "Hero Banner",
+	"category": "layout",
+	"icon": "slides",
+	"description": "Flexible hero with headline, subcopy, button and background.",
+	"keywords": ["hero", "banner", "header"],
+	"supports": { "align": ["wide", "full"], "anchor": true },
+	"attributes": {
+		"eyebrow": { "type": "string", "default": "" },
+		"headline": { "type": "string", "default": "Your headline" },
+		"subcopy": { "type": "string", "default": "" },
+		"ctaText": { "type": "string", "default": "" },
+		"ctaUrl": { "type": "string", "default": "" },
+		"bgUrl": { "type": "string", "default": "" }
+	},
+	"editorScript": "edw-hero-editor",
+	"style": "edw-hero-style",
+	"editorStyle": "edw-hero-editor-style"
+}

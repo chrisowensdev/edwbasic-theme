@@ -1,0 +1,27 @@
+.edw-hero {
+	background-size: cover;
+	background-position: center;
+	padding: 6rem 1.25rem;
+}
+.edw-hero__inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.edw-hero__eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	opacity: 0.8;
+	margin: 0 0 0.5rem;
+}
+.edw-hero__headline {
+	margin: 0.25rem 0 1rem;
+	line-height: 1.1;
+}
+.edw-hero__subcopy {
+	margin: 0 auto 1.25rem;
+	max-width: 720px;
+}
+.edw-hero__cta .wp-block-button__link {
+	padding: 0.75rem 1.25rem;
+}
